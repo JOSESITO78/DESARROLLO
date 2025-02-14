@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root{
+    --yellow: #FCEED8;
+    --pink: #FBE5E6;
+    --skyblue: #DEE9FC;
+
+
+    --blacki: #121826;
+    --grayi: #9DA3AE;
+    --whitie: #E5E7EB;
+    --bluey: #212936;
+    
+    
+    
+    --lightgreyi: #D2D5DA;
+    --bgimage: 'resources\Background_image.svg';
+}
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    padding: 3em;
+
+    background-color: gray;
+    background-image: url('../resources/Background_image@3x.png');
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /*width: 80vw;*/
+
+    
+}
+
+h1,
+h3 {
+    color: var(--bluey);
+}
+
+header p {
+    color: var(--lightbluey);
+    margin-top: 3em;
+}
+
+main {
+    display: flex;
+    gap: 1em;
+    background-color: black;
+    flex-wrap: wrap;
+    
+    
+}
+
+.emoji {
+    background-color: white;
+    width: fit-content;
+    padding: .5em;
+    font-size: 30px;
+    border-radius: 100;
+}
+
+article:nth-child(1) .emoji{
+    background-color: green;
+}
+
+article:nth-child(2) .emoji{
+    background-color: red;
+}
+
+article:nth-child(3) .emoji{
+    background-color: yellowgreen;
+}
+
+article {
+    color: var(--whitie);
+    border-radius: 20px;
+    width: 300px;
+}
+
+article img {
+    width: 100%;
+    
+}
+
+.card-description {
+    color: var(--yellowy);
+}
